@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image packer</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            margin: 50px 350px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "black";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "blue"
+        }
+
+        function imagepicker() {
+            const list_image = ["foto_pubg.jpg", "foto_Call-of-Duty.jpg", "foto_Resident-Evil.png", "foto_valorant.png", "foto_visage.jpg", "foto_outlast.jpg"];
+            let pilihan = document.getElementById("option");
+
+            if (pilihan.value == "Pubg") {
+                let select = list_image[0];
+                document.getElementById("image").src = `images/${select}`
+                alert("gambar pubg.jpg")
+            }
+
+
+             if (pilihan.value == "COD Black Ops 3") {
+                let select = list_image[1];
+                document.getElementById("image").src = `images/${select}`
+                alert("gambar COD Black Ops 3.jpg")
+            }
+
+
+             if (pilihan.value == "RE Village") {
+                let select = list_image[2];
+                document.getElementById("image").src = `images/${select}`
+                alert("gambar RE Village.jpg")
+            }
+
+
+             if (pilihan.value == "Valorant") {
+                let select = list_image[3];
+                document.getElementById("image").src = `images/${select}`
+                alert("gambar Valorant.jpg")
+            }
+
+
+             if (pilihan.value == "Visage") {
+                let select = list_image[4];
+                document.getElementById("image").src = `images/${select}`
+                alert("gambar Visage.jpg")
+            }
+
+
+            if (pilihan.value == "Outlast") {
+                let select = list_image[5];
+                document.getElementById("image").src = `images/${select}`
+                alert("gambar Outlast.jpg")
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home">
+        <h1>Welcome To Picture</h1>    
+    </a>
+    <hr>
+    <br>
+    <select id="option" onchange="imagepicker()">
+        <option value="" selected>Pilih Gambar</option>
+        <option value="Pubg">Pubg</option>
+        <option value="COD Black Ops 3">COD Black Ops 3</option>
+        <option value="RE Village">RE Village</option>
+        <option value="Valorant">Valorant</option>
+        <option value="Visage">Visage</option>
+        <option value="Outlast">Outlast</option>
+    </select>
+    <br>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <img id="image">
+        </div>
+    </div>
+
+</body>
+</html>

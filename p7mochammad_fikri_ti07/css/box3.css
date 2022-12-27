@@ -1,0 +1,55 @@
+.container-navbar{
+    background-color: red;
+    width: 70%;
+    height: 5em;
+    float: right;
+    border: 1px solid black;
+}
+
+.container-navbar-aside{
+    background-color: yellow;
+    width: 27%;
+    height: 5em;
+    float: left;
+    border: 1px solid black;
+}
+
+.container-main{
+    background-color: grey;
+    width: 50%;
+    height: 27em;
+    margin-top: 7em;
+    margin-left: 30%;
+    float: none;
+    position: absolute;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.container-sidebar-a{
+    background-color: aqua;
+    width: 15%;
+    height: 27em;
+    margin-top: 2em;
+    float: right;
+    border: 1px solid black;
+}
+
+.container-sidebar-b{
+    background-color: green;
+    width: 27%;
+    height: 27em;
+    margin-top: 2em;
+    float: left;
+    border: 1px solid black;
+}
+
+footer{
+    background-color: blue;
+    width: 100%;
+    height: 4em;
+    position: absolute;
+    float: none;
+    margin-top: 43%;
+    border: 1px solid black;
+}

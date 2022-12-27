@@ -1,0 +1,104 @@
+body{
+    background-color: wheat;
+
+}
+
+#header h1 {
+    color: blueviolet;
+    text-align: center;
+    padding: 1em;
+}
+ 
+#soekarno {
+    text-align: center;
+
+}
+
+#header {
+    background-color: rgb(233, 164, 53);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+blockquote {
+    border-radius: 2em;
+}
+
+.promo,
+ol {
+list-style: none;
+}
+
+.promo {
+   background-color: tomato;
+   border-radius: 1em;
+   padding: 1em;
+
+}
+
+#beternak {
+   background-color: white;
+   border-radius: 1em;
+   padding: 1em;
+   margin-top: 1em;
+}
+
+#profil {
+   background-color: grey;
+   font-family: 'Times New Roman', Times, serif;
+   border-radius: 1em;
+   padding: 1em;
+   padding-top: 2px;
+}
+
+.promo,
+h2,
+h3 {
+color: darkslategray
+}
+
+#menu {
+    float: none;
+    display: flex;
+    list-style: none;
+    margin-left: 40%;
+}
+
+#header blockquote {
+    text-align: center;
+    background-color: rgb(225, 213, 53);
+    padding: 15px;
+}
+
+#list ul {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.gambar {
+    text-align: center;
+}
+
+.isi::first-letter{
+    font-size: 50px;
+    color: blue;
+}
+
+.koleksi img{
+    width: 24%;
+    align-items: center;
+}
+
+#promo,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+.promo,
+ol {
+    text-align: center;
+    float: none;
+}
